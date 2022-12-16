@@ -26,7 +26,7 @@
         #bigtext {
             color: red;
             margin-top: 200px;
-            margin-bottom: 1    00px;
+            margin-bottom: 100px;
         }
 
         #what {
@@ -58,7 +58,21 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 50px;
+            font-size: x-large;
         }
+
+
+        
+        #picCauses {
+            width: 90%;
+            /* max-width: 400px; */
+            height: auto;
+        }
+
+        #causes-right {
+            font-size: x-large;
+        }
+
 
         #video {
             background-color: #be4d25;
@@ -94,7 +108,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 70%;
+            width: 80%;
 
         }
 
@@ -112,6 +126,14 @@
             font-size: 1.5em;
         }
 
+        
+        .item2 {
+            grid-area: myArea;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
         #cards {
             margin-top: 30px;
         }
@@ -119,6 +141,7 @@
         .card-img-top {
             height: 300px;
         }
+
 
     </style>
 
@@ -132,20 +155,20 @@
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Learning ADHD</a>
+            <a class="navbar-brand" href="index.html">Learning ADHD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#index">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#page2.html">Understanding ADHD</a>
+                        <a class="nav-link" href="page2.html">Understanding ADHD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Living with ADHD</a>
+                        <a class="nav-link" href="stories.html">Living with ADHD</a>
                     </li>
                 </ul>
             </div>
@@ -172,7 +195,7 @@
     <div class="grid-container-element">
 
         <div class="item1">
-            <h2>What is ADHD</h2>
+            <h2 style="font-weight: bolder;">What is ADHD</h2>
         </div>
 
         <div class="grid-child-element" id="adhd-left">
@@ -183,12 +206,39 @@
 
         </div>
     </div>
+
+    <div class="grid-container-element">
+
+        <div class="item2" id="causes">
+            <h2 style="font-weight: bolder;">What causes ADHD</h2>
+        </div>
+
+        <div class="grid-child-element" id="causes-left">
+            <img src="images/brainadhd.png" alt="Causes of ADHD" id="picCauses">
+
+        </div>
+
+        <div class="grid-child-element" id="causes-right">
+            <p id="causesInfo">Scientists are studying cause(s) and risk factors in an effort to find better ways to manage and reduce the chances of a person having ADHD. The cause(s) and risk factors for ADHD are unknown, but current research shows that genetics plays an important role. Recent studies link genetic factors with ADHD.1
+            In addition to genetics, scientists are studying other possible causes and risk factors including:
+            <ul>
+                <li>Brain injury</li>
+                <li>Exposure to environmental risks (e.g., lead) during pregnancy or at a young age</li> 
+                <li>Alcohol and tobacco use during pregnancy</li> 
+                <li>Premature delivery</li> 
+                <li>Low birth weight</li>    
+            </ul>
+                
+                </p>
+            </div>
+
+    </div>
     
 
     <!-- Video about what is ADHD -->
     <div class="container-fluid" id="video">
         <br><br>
-        <h3 class="videoinfo">Here is a short video on what ADHD is and how it affects lives</h3>
+        <h3 class="videoinfo" style="font-weight: bolder;">Here is a short video on what ADHD is and how it affects lives</h3>
         <br>
         <div class="vid">
             <iframe class="responsive-iframe" src="https://www.youtube.com/embed/5l2RIOhDXvU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -196,8 +246,6 @@
             <br><br>
 
     </div>
-
-
 
 
 
